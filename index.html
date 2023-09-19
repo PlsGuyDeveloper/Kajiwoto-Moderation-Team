@@ -54,14 +54,14 @@
             text-decoration: underline;
         }
 
-        /* Corrected image class name to "icon" */
+        /* Updated image class name to "icon" */
         .icon {
             /* Added missing border color and style */
             border: 1px solid black;
             border-radius: 20px;
-            /* Adjusted width and height values for the image */
-            width: 100px;
-            height: 100px;
+            /* Updated width and height values for the image */
+            width: 25px;
+            height: 25px;
             display: block;
             margin: 0 auto;
         }
@@ -70,7 +70,14 @@
             margin-top: 40px;
             font-size: 20px;
         }
-    </style>
+
+        /* Make the navbar responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 5px 0;
+            }
+        }
+        </style>
 </head>
 <body>
     <div class="navbar">
