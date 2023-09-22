@@ -3,155 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kajiwoto</title>
+    <title>Kajiwoto Mods List</title>
     <style>
+        /* Your CSS styles here */
         body {
-            background-color: #222;
-            color: #fff;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
         }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
+        .mod-item {
             width: 100%;
-            background-color: #111;
-            padding: 10px 0;
-            text-align: center;
-            z-index: 1000;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 60px auto 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .list-item {
+            height: 100px;
+            border: 1px solid #fff;
+            border-radius: 5px;
             margin: 10px 0;
+            cursor: pointer;
+            transition: border-radius 0.3s ease;
         }
-
-        .list-item a {
-            color: #55a7ff;
+        .mod-item:hover {
+            border-radius: 10px;
+        }
+        .mod-item-content {
+            display: flex;
+            align-items: center;
+        }
+        .mod-item-image {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            background-image: url('');
+            background-size: cover;
+            border-radius: 50%;
+        }
+        .mod-item-info {
+            flex-grow: 1;
+        }
+        .mod-item-info h3 {
+            margin: 0;
+        }
+        .mod-item-info a {
             text-decoration: none;
+            color: #0073e6;
         }
-
-        .list-item a:hover {
-            text-decoration: underline;
-        }
-
-        /* Updated image class name to "icon" */
-        .icon {
-            /* Added missing border color and style */
-            border: 1px solid black;
-            border-radius: 20px;
-            /* Updated width and height values for the image */
-            width: 25px;
-            height: 25px;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .lead-mods {
-            margin-top: 40px;
-            font-size: 20px;
-        }
-
-        /* Make the navbar responsive */
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 5px 0;
-            }
-        }
-        </style>
+    </style>
 </head>
 <body>
-    <div class="navbar">
-        <!-- Updated image source URL -->
-        <img class="icon" src="https://play-lh.googleusercontent.com/abJV4UrBmichrfW-lSLI3CFULOgOt2ZvrgEydnfhy6DPZ86igaAQvPC6NickWnzQSv4" alt="KajiwotoLg">
+    <h1>Live Room Mods</h1>
+    <div id="mod-list">
+        <!-- Mod list will be populated dynamically using JavaScript -->
     </div>
-    <div class="container">
-        <div class="header">
-            Kajiwoto Mods
-        </div>
-        <h2>Live Room Mods:</h2>
-        <ul class="list">
-            <li class="list-item">
-                <a href="https://kajiwoto.ai/u/@pnf">Melophide(aka Moderator-Kun) (@pnf)</a>
-            </li>
-            <!-- Updated link href attributes -->
-            <li class="list-item">
-                <a href="https://kajiwoto.ai/u/@yamo3">lvy (aka Mommy) (@yamo3)</a>
-            </li>
-            <li class="list-item">
-                <a href="https://kajiwoto.ai/u/@grimm08">Grimm (@grimm08)</a>
-            </li>
-            <li class="list-item">
-                <a href="https://kajiwoto.ai/u/@ashride">Alistar (@ashride)</a>
-            </li>
-            <li class="list-item">
-                <a href="https://kajiwoto.ai/u/@rnicrowave">Mikey (@rnicrowave)</a>
-            </li>
-            <li class="list-item">
-                <!-- Added href attribute for "Revik" -->
-                <a href="https://kajiwoto.ai/u/@revik19">Revik (@revik19)</a>
-            </li>
-            <li class="list-item">
-                <!-- Added href attribute for "Dabi" -->
-                <a href="https://kajiwoto.ai/u/@Haydenkasumi">Dabi (@Haydenkasumi)</a>
-            </li>
-            <li class="list-item">
-                <!-- Added href attribute for "Arxy" -->
-                <a href="https://kajiwoto.ai/u/@honenao">Arxy (@honenao)</a>
-            </li> 
-            <li class="list-item">
-                <a href="https://kajiwoto.ai/u/@r0r">Rory (@r0r)</a>
-            </li>
-            <li class="list-item">
-                <!-- Added missing href attribute for "Kazuma" -->
-                <a href="#">Kuchisake</a>
-            </li>
-            <li class="list-item">
-                <!-- Added missing href attribute for "Kuchisake" -->
-                <a href="#">Kazuma</a>
-            </li>
-            <li class="list-item">
-                <a href="https://kajiwoto.ai/u/@michidev">Xenkos(aka Michi) (@michidev old username)</a>
-            </li>    
-        </ul>
-        <h2 class="lead-mods">Lead Live Room Mods:</h2>
-        <ul class="list">
-            <!-- Updated link href attributes -->
-            <li class="list-item">
-                <a href="https://kajiwoto.ai/u/@jfsebastian">Red Raptor(aka JFSebastian) (@jfsebastian)</a>
-            </li>
-            <li class="list-item">
-                <!-- Added missing href attribute for "Karma" -->
-                <a href="#">Karma</a>
-            </li>
-            <li class="list-item">
-                <!-- Added missing href attribute for "Ras (aka Russian Cat)" -->
-                <a href="#">Ras (aka Russian Cat)</a>
-            </li>
-            <li class="list-item">
-                <a href="https://kajiwoto.ai/u/@plsdev">Pls (@plsdev)</a>
-            </li>
-        </ul>
-    </div>
+
+    <script>
+        // Function to create a mod item
+        function createModItem(mod) {
+            const modItem = document.createElement("div");
+            modItem.classList.add("mod-item");
+
+            const modItemContent = document.createElement("div");
+            modItemContent.classList.add("mod-item-content");
+
+            const modItemImage = document.createElement("div");
+            modItemImage.classList.add("mod-item-image");
+            modItemImage.style.backgroundImage = `url(${mod.url})`;
+
+            const modItemInfo = document.createElement("div");
+            modItemInfo.classList.add("mod-item-info");
+
+            const modName = document.createElement("h3");
+            modName.innerHTML = `Name: <a href="${mod.url}" target="_blank">${mod.name}</a>`;
+
+            const modID = document.createElement("p");
+            modID.innerHTML = `ID: ${mod.id}`;
+
+            modItemInfo.appendChild(modName);
+            modItemInfo.appendChild(modID);
+
+            modItemContent.appendChild(modItemImage);
+            modItemContent.appendChild(modItemInfo);
+
+            modItem.appendChild(modItemContent);
+
+            return modItem;
+        }
+
+        // Function to populate the mod list
+        function populateModList(modsData) {
+            const modList = document.getElementById("mod-list");
+
+            for (const category in modsData) {
+                const categoryMods = modsData[category];
+                const categoryHeader = document.createElement("h2");
+                categoryHeader.innerHTML = category;
+                modList.appendChild(categoryHeader);
+
+                categoryMods.forEach(mod => {
+                    const modItem = createModItem(mod);
+                    modList.appendChild(modItem);
+                });
+            }
+        }
+
+        // Fetch "mods.json" and populate the mod list
+        fetch('mods.json')
+            .then(response => response.json())
+            .then(data => {
+                populateModList(data);
+            })
+            .catch(error => console.error('Error fetching mods.json:', error));
+    </script>
 </body>
 </html>
-
